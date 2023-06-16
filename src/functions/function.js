@@ -1,7 +1,10 @@
 import axios from "axios";
 
-
-export const getNews = async() => {
-    const request = await axios.get("https://api.nytimes.com/svc/archive/v1/2019/1.json?api-key=eph4xRHl4ffKIAv4cmqZOmKkTfjxgob8");
-    console.log(request);
+export const getNASA = async(state) => {
+    const request = await axios.get("https://api.nasa.gov/planetary/apod?api_key=I8UhPoqXqnDK2im3ficSk47KNYIW7V7IgAG7NYcV")
+    state(request.data)
+}
+export const getApi = async(state) => {
+    const request = await axios.get("https://api.adviceslip.com/advice")
+    state(request.data.slip.advice)
 }

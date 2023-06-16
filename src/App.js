@@ -1,9 +1,6 @@
 import './App.css';
-import { useState, useEffect } from 'react';
-import { BrowserRouter, Routes, R, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './components/HomePage';
-import UserNews from './components/UserNews';
-
 
 function App() {
    
@@ -11,7 +8,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={ <HomePage /> } />
-        <Route path="/selected-news" element={ <UserNews />} />
+        {/* <Route path="/selected-news" element={ <UserNews />} /> */}
       </Routes>
     </BrowserRouter>
   );
