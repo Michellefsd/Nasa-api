@@ -8,6 +8,10 @@
   flex-direction: column;
   gap: 1.2rem;
 }
+img{
+  max-width: 100%;
+  max-height: auto;
+}
 .content {
   display: flex;
   flex-direction: column;
