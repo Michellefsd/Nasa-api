@@ -1,6 +1,8 @@
 .container {
+  margin: 0;
   text-align: center;
-  background-color: rgb(187, 194, 185);
+  background: rgb(207, 207, 160);
+  background: linear-gradient(180deg, rgb(114, 243, 142) 0%, rgba(243, 255, 68, 0.54) 75%, #ffffff 100%);
   padding: 2rem;
   display: flex;
   flex-direction: column;
