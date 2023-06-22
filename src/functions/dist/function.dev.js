@@ -10,19 +10,20 @@ var _axios = _interopRequireDefault(require("axios"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var getNASA = function getNASA(state) {
-  var request;
+  var optionalKey, request;
   return regeneratorRuntime.async(function getNASA$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
-          _context.next = 2;
-          return regeneratorRuntime.awrap(_axios["default"].get("https://api.nasa.gov/planetary/apod?api_key=".concat(process.env.REACT_APP_API_KEY || "I8UhPoqXqnDK2im3ficSk47KNYIW7V7IgAG7NYcV")));
+          optionalKey = "I8UhPoqXqnDK2im3ficSk47KNYIW7V7IgAG7NYcV";
+          _context.next = 3;
+          return regeneratorRuntime.awrap(_axios["default"].get("https://api.nasa.gov/planetary/apod?api_key=".concat(process.env.REACT_APP_API_KEY || optionalKey)));
 
-        case 2:
+        case 3:
           request = _context.sent;
           state(request.data);
 
-        case 4:
+        case 5:
         case "end":
           return _context.stop();
       }
