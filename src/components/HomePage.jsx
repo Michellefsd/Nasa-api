@@ -16,7 +16,9 @@ function HomePage() {
     <div className='container'>
         {nasaNews? (
             <div className='content'>
-                <img src={nasaNews.url} alt={nasaNews.title}/>
+                <div>
+                  <img src={nasaNews.url} alt={nasaNews.title}/>
+                </div>
                 <h3>{nasaNews.title}</h3>
                 <div>
                     <p className='text'>{nasaNews.copyright} - {nasaNews.date}</p>

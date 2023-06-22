@@ -2,16 +2,20 @@
   margin: 0;
   text-align: center;
   background: rgb(59, 59, 59);
-  background: linear-gradient(180deg, rgb(121, 59, 9) 0%, rgba(209, 206, 52, 0.54) 75%, #ffffff 100%);
+  background: linear-gradient(180deg, rgb(56, 52, 49) 0%, rgba(209, 206, 52, 0.54) 75%, #ffffff 100%);
   padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
 }
+img{
+  max-width: 100%;
+  max-height: auto;
+}
 .content {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.3rem;
 }
 @media (min-width: 768px) {
   .text {
