@@ -9,7 +9,7 @@ function HomePage() {
     }, [])
     const style = {
       "animation": "spin infinite 3.3s linear",
-      "color":"rgb(210, 93, 240)",
+      "color":"rgb(71, 89, 252)",
       "fontSize":"4em"
     }
   return (

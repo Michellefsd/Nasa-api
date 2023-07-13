@@ -1,28 +1,71 @@
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 ;
+  padding: 0;
+  font-family: 'Merriweather',"Fira Sans",
+    "Droid Sans", "Helvetica Neue", serif,  sans-serif;
+}
+
+code {
+  font-family: 'Merriweather', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  serif, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ 
 .container {
   margin: 0;
   text-align: center;
-  background: rgb(59, 59, 59);
-  background: linear-gradient(180deg, rgb(56, 52, 49) 0%, rgba(209, 206, 52, 0.54) 75%, #ffffff 100%);
-  padding: 2rem;
+  background-image: linear-gradient(
+    170deg,
+    hsl(240deg 100% 5%) 0%,
+    hsl(232deg 39% 16%) 37%,
+    hsl(235deg 31% 28%) 57%,
+    hsl(238deg 27% 41%) 69%,
+    hsl(241deg 28% 54%) 79%,
+    hsl(244deg 48% 67%) 89%,
+    hsl(246deg 98% 81%) 100%
+  );
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  padding: 0 2rem;
 }
 img{
+  margin: 0;
   max-width: 100%;
-  max-height: auto;
+  height: auto;
+  max-height: 100vh;
 }
+h3 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
 .content {
   display: flex;
   flex-direction: column;
-  gap: 1.3rem;
+  gap: 1.7rem;
+}
+.text {
+  font-size: 1.8rem;
+  color: rgb(17, 15, 15);
 }
 @media (min-width: 768px) {
   .text {
-    letter-spacing: 1.2px;
-    line-height: 1.2rem;
+    letter-spacing: 1.5px;
+    line-height: 2rem;
   } 
   .text-div {
+    margin-top: 2rem;
     padding: 0 14%;
   }
 }
@@ -37,4 +80,9 @@ img{
 
 .footer {
   border-top: 1px solid rgb(78, 75, 75);
+  padding-top: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin: 1.8rem auto
 }
