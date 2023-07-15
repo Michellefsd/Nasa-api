@@ -24,20 +24,14 @@ code {
 .container {
   margin: 0;
   text-align: center;
-  background-image: linear-gradient(
-    170deg,
-    hsl(240deg 100% 5%) 0%,
-    hsl(232deg 39% 16%) 37%,
-    hsl(235deg 31% 28%) 57%,
-    hsl(238deg 27% 41%) 69%,
-    hsl(241deg 28% 54%) 79%,
-    hsl(244deg 48% 67%) 89%,
-    hsl(246deg 98% 81%) 100%
-  );
+  background-color: rgb(39, 39, 39);
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
   padding: 0 2rem;
+}
+p, h3, h4 {
+  color: rgb(187, 180, 172);
 }
 img{
   margin: 0;
@@ -57,12 +51,12 @@ h3 {
 }
 .text {
   font-size: 1.8rem;
-  color: rgb(17, 15, 15);
+  color: rgb(168, 155, 136);
 }
 @media (min-width: 768px) {
   .text {
-    letter-spacing: 1.5px;
-    line-height: 2rem;
+    letter-spacing: 1.3px;
+    line-height: 3rem;
   } 
   .text-div {
     margin-top: 2rem;
